@@ -1,4 +1,5 @@
-![alt text](https://raw.githubusercontent.com/ankurrsinghal/react-inifinite-scroll-date-picker/master/public/screenshot.png)
+## How to use it
+
 
 ```
 const App = () => {
@@ -15,3 +16,5 @@ const App = () => {
   )
 }
 ```
+
+![alt text](https://raw.githubusercontent.com/ankurrsinghal/react-inifinite-scroll-date-picker/master/public/screenshot.png)
