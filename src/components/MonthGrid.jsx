@@ -1,7 +1,6 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { dateToNumberOfDaysInMonth, returnNthMonth, returnNextMonth, returnPreviousMonth, returnNthDate } from '../utils';
-import { Square, Circle } from '../UI';
 import Day from './Day';
 
 function MonthGrid({ className, date, onDayClick }) {
@@ -23,19 +22,19 @@ function MonthGrid({ className, date, onDayClick }) {
           .map((_, i) => i + 1)
           .map(day => {
             if (a >= nDays && (day < firstDay || day > nDays + firstDay - 1)) {
-              return <Day size="40px" empty={true} key={day} />;
+              return <Day size="40px" mobileSize="35px" empty={true} key={day} />;
             } else {
               if (a < nDays) {
                 ++a
                 return (
-                  <Day onClick={handleOnClick.bind(null, a)} size="40px" key={day}>
+                  <Day onClick={handleOnClick.bind(null, a)} size="40px" mobileSize="35px" key={day}>
                     {a}
                   </Day>
                 );
               } else {
                 const value = day - firstDay + 1;
                 return (
-                  <Day onClick={handleOnClick.bind(null, value)} size="40px" key={day}>
+                  <Day onClick={handleOnClick.bind(null, value)} size="40px" mobileSize="35px" key={day}>
                     {value}
                   </Day>
                 );
@@ -52,6 +51,10 @@ function MonthGrid({ className, date, onDayClick }) {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+
+    @media (max-width: 768px) {
+      width: 365px;
+    }
   `;
 
   export default StyledMonthGrid;

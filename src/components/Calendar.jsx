@@ -72,7 +72,7 @@ const StyledCalendar = styled(Calendar)`
   display: flex;
   flex-direction: column;
   height: 90vh;
-  padding: 50px 25px 0;
+  padding: 50px 24px 0;
   background: black;
   max-width: 450px;
   margin-left: auto;

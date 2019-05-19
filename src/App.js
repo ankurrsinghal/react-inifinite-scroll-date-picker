@@ -123,9 +123,12 @@ const StyledApp = styled(App)`
       display: none;
     }
 
-    .calendar-app {
-      height: 100vh;
-      border-radius: 0px;
+    .calendar {
+      width: 100%;
+      .calendar-app {
+        height: 100vh;
+        border-radius: 0px;
+      }
     }
   }
 `

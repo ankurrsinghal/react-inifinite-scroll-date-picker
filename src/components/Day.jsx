@@ -5,7 +5,6 @@ const dayStyle = props => {
   if (!props.empty) {
     return css`
       font-size: 13px;
-      line-height: ${props => props.size};
       text-align: center;
       border: 1px solid rgba(255, 255, 255, 0.75);
       color: white;

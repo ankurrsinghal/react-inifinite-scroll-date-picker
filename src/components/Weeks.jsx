@@ -13,6 +13,10 @@ const Week = styled.div`
   &:last-child {
     margin-right: 0;
   }
+
+  @media (max-width: 768px) {
+    width: 35px;
+  }
 `;
 
 const Weeks = ({ className }) => {
@@ -32,6 +36,10 @@ const StyledWeeks = styled(Weeks)`
   width: 400px;
   border-bottom: 1px solid white;
   padding: 1rem 0;
+
+  @media (max-width: 768px) {
+    width: 365px;
+  }
 `;
 
 export default StyledWeeks;
